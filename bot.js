@@ -1,9 +1,10 @@
 const { Telegraf, Markup } = require('telegraf');
 const pool = require('./db');
+require('dotenv').config();
 
 const BOT_TOKEN = process.env.BOT_TOKEN;   // read from .env
 const ADMIN_ID = parseInt(process.env.ADMIN_ID); // 5423314276
-const FRONTEND_URL = process.env.FRONTEND_URL || "https://mini-app-bingo.onrender.com";
+const FRONTEND_URL = process.env.FRONTEND_URL || "https://dast12.onrender.com";
 
 const bot = new Telegraf(BOT_TOKEN);
 
